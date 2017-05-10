@@ -155,24 +155,44 @@ div#slider figure{
 #naslov1:hover , #naslov2:hover{
 	color: red;
 }
-footer{
+.footer{
 	width: 100%;
 	height: auto;
 	background-color: rgb(34, 102, 102);
 	color: rgb(102, 153, 153);
-	font-family: 'Verdana', serif;
 	font-style: italic;
 	font-weight: 300 !important;
-	padding-top: 15px;
-	padding-bottom: 15px;
-	padding-left: 100px;
-	margin: 0 !important;
+	padding: 20px;
+}
+#naslov-footer{
+	font-size: 24px;
+	font-family: 'Indie Flower', cursive;"
+}
+.social-icons{
+	text-align: center;
+	padding: 20px;
+	width: 150px;
+	margin-right: 10px;
+	float: right;
+}
+#fb:hover, #yt:hover, #ln:hover{
+	background-color: white;
+	transition: 0.2s linear;
+	-o-transition: 0.2s linear;
+	-webkit-transition: 0.2s linear;
+	-moz-transition: 0.2s linear;
+	padding: 5px;
+	cursor: pointer;
+
 }
 .fontAccordion{
 	font-family: 'Ubuntu Condensed', sans-serif;
 	font-size: 18px;
 }
 /*PHOTO GALLERY START*/
+	#naslov-galerija{
+	font-family: 'Indie Flower', cursive;"
+	}
 	.wrap {
       overflow: hidden;
       margin: 10px;
