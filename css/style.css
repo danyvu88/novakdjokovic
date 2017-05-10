@@ -177,6 +177,9 @@ div#slider figure{
 }
 #fb:hover, #yt:hover, #ln:hover{
 	background-color: white;
+	transition: 0.2s linear;
+	-o-transition: 0.2s linear;
+	-webkit-transition: 0.2s linear;
 	-moz-transition: 0.2s linear;
 	padding: 5px;
 	cursor: pointer;
