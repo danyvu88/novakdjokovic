@@ -1,0 +1,293 @@
+@import url('https://fonts.googleapis.com/css?family=Indie+Flower');
+@import url('https://fonts.googleapis.com/css?family=Dancing+Script');
+@import url('https://fonts.googleapis.com/css?family=Dancing+Script|Josefin+Slab');
+@import url('https://fonts.googleapis.com/css?family=Ubuntu+Condensed');
+body { 
+	margin: 0 !important; 
+} 
+/*IMAGE SLIDER - START*/
+div#slider{
+ 	overflow: hidden;
+}
+div#slider figure img { 
+	width: 20%; 
+	height: auto;
+	float: left; 
+	opacity: 0.7;
+}
+div#slider figure{ 
+	  position: relative;
+	  width: 500%;
+	  margin: 0;
+	  left: 0;
+	  text-align: left;
+	  font-size: 0;
+	  animation: 15s djokovicslider infinite; 
+}
+
+@keyframes djokovicslider{
+	0% { left: 0%; }
+	10% { left: 0%; }
+	15% { left: -100%; }
+	35% { left: -100%; }
+	40% { left: -200%; }
+	60% { left: -200%; }
+	65% { left: -300%; }
+	85% { left: -300%; }
+	90% { left: -400%; }
+	100% { left: -400%; }
+}
+/*IMAGE SLIDER - END*/
+
+/*SIDE BAR MENU - START*/
+.hamburger{
+	font-size:30px;
+	cursor:pointer; 
+	font-family: 'Indie Flower', cursive;" 
+}
+.hamburger:hover{
+	color: orange;
+	cursor: pointer;
+	-webkit-transition: 0.3s;
+	-moz-transition: 0.3s;
+	transition: 0.3s;
+}
+
+.novak{
+	float: right; 
+	font-family: 'Indie Flower', cursive; 
+	font-weight: bold; 
+	font-size: 34px; 
+	margin-bottom: 5px;"
+}
+.novak:hover{
+	color: orange;
+	cursor: pointer;
+	-webkit-transition: 0.2s;
+	-moz-transition: 0.2s;
+	transition: 0.2s;
+}
+.sidenav {
+    height: 100%;
+    width: 0;
+    position: fixed;
+    z-index: 1;
+    top: 0;
+    left: 0;
+    background-color: #111;
+    overflow-x: hidden;
+    transition: 0.5s;
+    padding-top: 60px;
+}
+
+.sidenav a {
+    padding: 8px 8px 8px 32px;
+    text-decoration: none;
+    font-size: 22px;
+    color: #818181;
+    display: block;
+    transition: 0.3s;
+    margin:0 5px 0 5px;
+    font-family: 'Indie Flower', cursive;
+}
+
+.sidenav a:hover, .offcanvas a:focus{
+    color: #f1f1f1;
+    -webkit-transition: 0.2s;
+    -moz-transition: 0.2s;
+    transition: 0.2s;
+}
+.sidenav a:focus{
+	color: orange;
+	outline: 1px solid orange;
+}
+.sidenav a:active{
+	coor: orange;
+	-webkit-transition: 0.2s;
+	-moz-transition: 0.2s;
+	transition: 0.2s;
+	outline: 1px solid orange;
+}
+.sidenav > .closebtn:focus{
+	outline: none;
+	border: none;
+}
+
+.sidenav .closebtn {
+    position: absolute;
+    top: 0;
+    right: 15px;
+    font-size: 45px;
+    margin-left: 50px;
+    outline: none;
+}
+#main {
+    transition: margin-left .5s;
+    padding: 16px;
+}
+
+/*SIDE BAR MENU - END*/
+
+/* CONTENT START */
+  hr{
+	 -moz-border-bottom-colors: none;
+	 -moz-border-image: none;
+	 -moz-border-left-colors: none;
+	 -moz-border-right-colors: none;
+	 -moz-border-top-colors: none;
+	 border-color: #EEEEEE -moz-use-text-color #FFFFFF;
+	 border-style: solid none;
+	 border-width: 1px 0;
+	 margin: 50px 0;
+}
+.paragrafi{
+	font-family: 'Josefin Slab', serif;
+	font-size: 24px !important;
+}
+.naslovi{
+	font-family: 'Indie Flower', cursive;" 
+
+}
+#naslov1, #naslov2{
+	transition: 0.3s linear;
+	position: relative;
+}
+#naslov1:hover , #naslov2:hover{
+	color: red;
+}
+footer{
+	width: 100%;
+	height: auto;
+	background-color: rgb(34, 102, 102);
+	color: rgb(102, 153, 153);
+	font-family: 'Verdana', serif;
+	font-style: italic;
+	font-weight: 300 !important;
+	padding-top: 15px;
+	padding-bottom: 15px;
+	padding-left: 100px;
+	margin: 0 !important;
+}
+.fontAccordion{
+	font-family: 'Ubuntu Condensed', sans-serif;
+	font-size: 18px;
+}
+/*PHOTO GALLERY START*/
+	.wrap {
+      overflow: hidden;
+      margin: 10px;
+    }
+    .box {
+      float: left;
+      position: relative;
+      width: 20%;
+      padding-bottom: 20%;
+    }
+    .boxInner {
+      position: absolute;
+      left: 10px;
+      right: 10px;
+      top: 10px;
+      bottom: 10px;
+      overflow: hidden;
+    }
+    .boxInner:hover{
+      opacity: 0.7;
+      border-radius: 10%;
+      box-shadow: 7px 7px 5px #888888;
+      -moz-box-shadow: 7px 7px 5px #888888;
+      -o-box-shadow: 7px 7px 5px #888888;
+      -webkit-box-shadow: 7px 7px 5px #888888;
+      -moz-border-radius: 10%;
+      -o-border-radius: 10%;
+      -webkit-border-radius: 10%;
+    }
+    .boxInner > img:hover{
+      transform: scale(1.3,1.3);
+      transition: 0.4s ease-out;
+      -moz-transition: 0.4s ease-out;
+      -o-transition: 0.4s ease-out;
+      -webkit-transition: 0.4s ease-out;
+      -moz-transform: scale(1.3,1.3);
+      -o-transform: scale(1.3,1.3);
+      -webkit-transform: scale(1.3,1.3);
+    }
+    .boxInner img {
+      width: 100%;
+    }
+    .boxInner .titleBox {
+      position: absolute;
+      bottom: 0;
+      left: 0;
+      right: 0;
+      margin-bottom: -50px;
+      background: #000;
+      background: rgba(0, 0, 0, 0.5);
+      color: #FFF;
+      padding: 10px;
+      text-align: center;
+      -webkit-transition: all 0.3s ease-out;
+      -moz-transition: all 0.3s ease-out;
+      -o-transition: all 0.3s ease-out;
+      transition: all 0.3s ease-out;
+    }
+    body.no-touch .boxInner:hover .titleBox, body.touch .boxInner.touchFocus .titleBox {
+      margin-bottom: 0;
+    }
+
+/*PHOTO GALLERY END*/
+
+/* CONTENT END */
+
+/*SIDE BAR MENU RESPONSIVE SETTINGS, MOBILE, TABLET - START */
+@media screen and (max-width: 600px){
+	.sidenav a{ font-size: 20px; transition: 0.5s; padding: 10px 5px 10px 5px; text-align: center;}
+}
+/*SETTINGS FOR SAMSUNG GALAXY S5*/
+@media screen and (max-width: 360px){
+	.novak{font-size:24px; margin-bottom: 0;}
+	.paragrafi{font-size: 18px !important;}
+	#naslov1, #naslov2{font-size: 24px;}
+	.hamburger{font-size: 24px;}
+	body{transition: 0.7s linear;}
+}
+/*SETTINGS FOR IPHONE 6 PLUS*/
+@media screen and ( max-width: 414px){
+	.novak{font-size:23px; margin-bottom: 0;}
+	.paragrafi{font-size: 17px !important;}
+	#naslov1, #naslov2{font-size: 23px;}
+	.hamburger{font-size: 23px;}
+	body{transition: 0.7s linear;}
+}
+/*SIDE BAR MENU RESPONSIVE SETTINGS, MOBILE, TABLET - END */
+
+/*GALLERY RESPONSIVE START*/
+    @media only screen and (max-width : 480px) {
+      /* Smartphone view: 1 tile */
+      .box {
+        width: 100%;
+        padding-bottom: 100%;
+      }
+    }
+    @media only screen and (max-width : 650px) and (min-width : 481px) {
+      /* Tablet view: 2 tiles */
+      .box {
+        width: 50%;
+        padding-bottom: 50%;
+      }
+    }
+    @media only screen and (max-width : 1050px) and (min-width : 651px) {
+      /* Small desktop / ipad view: 3 tiles */
+      .box {
+        width: 33.3%;
+        padding-bottom: 33.3%;
+      }
+    }
+    @media only screen and (max-width : 1290px) and (min-width : 1051px) {
+      /* Medium desktop: 4 tiles */
+      .box {
+        width: 25%;
+        padding-bottom: 25%;
+      }
+    }
+/*GALLERY RESPONSIVE END*/
