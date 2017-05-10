@@ -173,9 +173,12 @@ footer{
 	font-size: 18px;
 }
 /*PHOTO GALLERY START*/
-	.wrap {
+    .wrap {
       overflow: hidden;
       margin: 10px;
+    }
+     #naslov-galerija{
+     font-family: 'Indie Flower', cursive;"
     }
     .box {
       float: left;
