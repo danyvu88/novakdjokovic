@@ -257,6 +257,30 @@ div#slider figure{
 
 /*PHOTO GALLERY END*/
 
+/*SCROOL UP Start*/
+#scrool{
+	position: fixed;
+	bottom: 250px;
+	right: 30px;
+	display: none;
+	cursor: pointer;
+	
+}
+
+
+/*SCROOL UP End*/
+  #dugme{
+    position: fixed;
+    bottom: 20px;
+    right: 10px;
+    z-index: 99;
+    font-weight: bold;
+    outline: none;
+    border: none;
+    display: none;
+    opacity: 0.7;
+    cursor: pointer;
+  }
 /* CONTENT END */
 
 /*SIDE BAR MENU RESPONSIVE SETTINGS, MOBILE, TABLET - START */
@@ -287,6 +311,12 @@ div#slider figure{
       .box {
         width: 100%;
         padding-bottom: 100%;
+      }
+      #dugme{
+        width: 30px;
+        height: 30px;
+        right: 2px;
+        z-index: 99;
       }
     }
     @media only screen and (max-width : 650px) and (min-width : 481px) {
