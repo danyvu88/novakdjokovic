@@ -23,6 +23,7 @@
 					  <a href="#derAnfang" onclick="closeAfterClickMenu()"><li>Der Anfang</li></a>
 					  <a href="#grandSlam" onclick="closeAfterClickMenu()"><li>Grand-Slam & Australiran-Open</li></a>
 					  <a href="#ehrungen" onclick="closeAfterClickMenu()"><li>Ehrungen</li></a>
+					  <a href="#naslov-galerija" onclick="closeAfterClickMenu()">GALERIE</a>
 					</div>
 				<div id="slider">
 					  <span class="hamburger" onclick="openNav()">&#9776; MENU</span>
@@ -171,6 +172,7 @@
 		</div>
 		<!--PHOTO GALLERY-->
 		<div class="container">
+			<h1 id="naslov-galerija"><center>GALERIE</center></h1><br>
 			<div class="wrap">
 		    <!-- Define all of the tiles: -->
 		    <div class="box">
@@ -234,90 +236,32 @@
 		      </div>
 		    </div>
 		  </div>
-	    </div>
+	    </div><br><hr>
 		  <!-- /#wrap -->
 
 		<!--END PHOTO GALLERY-->
 
 		<!--FOOTER START-->
-			<!--<div class="row">
-				<div class="col-md-12">
-					<footer>
-						<h3>&copy;Aleksandra Ivanis 2017.</h3><br>
-						<span style="padding-right: 13px"><img src="img/fb.png"></span>
-						<span style="padding-right: 13px"><img src="img/yt.png"></span>
-						<span><img src="img/ln.png"></span>
-					</footer>
+			<div class="container footer">
+				<div class="row ">
+					<div class="col-md-8">
+						<h1 id="naslov-footer">©2017 Danijel Ruzic • Vukovar, Croatia •</h1>
+					</div>
+					<div class="col-md-4 social-icons">
+						<a href="https://www.facebook.com/danijel.dany.75"><img src="img/fb.png" id="fb"></a>
+						<a href="https://www.youtube.com/user/danijel569/videos"><img src="img/yt.png" id="yt"></a>
+						<a href="https://www.linkedin.com/in/danijel-ružić-300047115"><img src="img/ln.png" id="ln"></a>
+					</div>
 				</div>
-			</div>-->
+			</div>
 		<!-- FOOTER END-->
 	</div>
 	<!--CONTENT END -->
 
-<script type="text/javascript">
-
-$(function(){
-      // See if this is a touch device
-      if ('ontouchstart' in window)
-      {
-        // Set the correct body class
-        $('body').removeClass('no-touch').addClass('touch');
-        
-        // Add the touch toggle to show text
-        $('div.boxInner img').click(function(){
-          $(this).closest('.boxInner').toggleClass('touchFocus');
-        });
-      }
-    });
+	<!--SCROOL UP-->
+<img src="img/scroolUp.png" id="dugme" onclick="topUp()">
 
 
-function openNav() {
-    document.getElementById("mySidenav").style.width = "250px";
-    document.getElementById("main").style.marginLeft = "250px";
-    document.getElementById("p1").style.fontStyle = "italic";
-    document.getElementById("p2").style.fontStyle = "italic";
-    document.body.style.backgroundColor = "rgba(0,0,0,0.4)";
-    document.getElementById("heading1").style.backgroundColor = "rgba(0,0,0,0.4)";
-    document.getElementById("heading2").style.backgroundColor = "rgba(0,0,0,0.4)";
-    document.getElementById("heading3").style.backgroundColor = "rgba(0,0,0,0.4)";
-    document.getElementById("heading4").style.backgroundColor = "rgba(0,0,0,0.4)";
-    document.getElementById("heading5").style.backgroundColor = "rgba(0,0,0,0.4)";
-    document.getElementById("heading6").style.backgroundColor = "rgba(0,0,0,0.4)";
-    document.getElementById("heading7").style.backgroundColor = "rgba(0,0,0,0.4)";
-
-}
-
-function closeNav() {
-    document.getElementById("mySidenav").style.width = "0";
-    document.getElementById("main").style.marginLeft= "0";
-    document.getElementById("p1").style.fontStyle = "normal";
-    document.getElementById("p2").style.fontStyle = "normal";
-    document.body.style.backgroundColor = "white";
-    document.getElementById("heading1").style.backgroundColor = "white";
-    document.getElementById("heading2").style.backgroundColor = "white";
-    document.getElementById("heading3").style.backgroundColor = "white";
-    document.getElementById("heading4").style.backgroundColor = "white";
-    document.getElementById("heading5").style.backgroundColor = "white";
-    document.getElementById("heading6").style.backgroundColor = "white";
-    document.getElementById("heading7").style.backgroundColor = "white";
-}
-
-function closeAfterClickMenu() {
-	document.getElementById("mySidenav").style.width = "0";
-    document.getElementById("main").style.marginLeft= "0";
-    document.getElementById("p1").style.fontStyle = "normal";
-    document.getElementById("p2").style.fontStyle = "normal";
-    document.body.style.backgroundColor = "white";
-    document.getElementById("heading1").style.backgroundColor = "white";
-    document.getElementById("heading2").style.backgroundColor = "white";
-    document.getElementById("heading3").style.backgroundColor = "white";
-    document.getElementById("heading4").style.backgroundColor = "white";
-    document.getElementById("heading5").style.backgroundColor = "white";
-    document.getElementById("heading6").style.backgroundColor = "white";
-    document.getElementById("heading7").style.backgroundColor = "white";
-}
-
-</script>
 	<script type="text/javascript" src="js/jquery-3.2.1.min.js"></script>
 	<script type="text/javascript" src="js/bootstrap.min.js"></script>
 	<script type="text/javascript" src="js/script.js"></script>
